@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AGPrueba</string>
+    <string name="login_btn_sign_in">Log in</string>
+    <string name="login_btn_sign_up">Sign up</string>
+    <string name="login_et_hint_email">Email</string>
+    <string name="login_et_hint_password">Password</string>
+
+    <string name="login_input_empty">Los campos Email y Password son necesarios</string>
+    <string name="login_username_err">Debe ingresar un correo válido</string>
+    <string name="login_password_err">La contraseña no tiene el formato adecuado</string>
+    <string name="login_user_created">¡Usuario guardado correctamente!</string>
+    <string name="login_user_not_found">El usuario ingresado no fué encontrado</string>
+
+    <string name="list_err">Error consultano intentos</string>
+</resources>
