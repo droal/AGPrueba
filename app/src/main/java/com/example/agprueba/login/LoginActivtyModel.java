@@ -3,6 +3,8 @@ package com.example.agprueba.login;
 import com.example.agprueba.database.User;
 
 
+import java.io.IOException;
+
 import dagger.Module;
 
 @Module
@@ -23,7 +25,11 @@ public class LoginActivtyModel implements LoginActivityMVP.Model{
 
     @Override
     public void createIntent(String userName, String result) {
-        repository.saveIntent(userName, result);
+        try {
+            repository.saveIntent(userName, result);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

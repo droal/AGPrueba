@@ -19,10 +19,7 @@ public class IntentEntity {
 		this.dbLogin = dbLogin;
 	}
 
-	public int crearIntent(String username, String result){
-
-		DateFormat df = new SimpleDateFormat("EEE, d MMM yyyy, HH:mm");
-		String date = df.format(Calendar.getInstance().getTime());
+	public int crearIntent(String username, String result, String date){
 
 		ContentValues intentValues = new ContentValues();
 

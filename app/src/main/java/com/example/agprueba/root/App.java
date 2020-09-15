@@ -4,6 +4,7 @@ package com.example.agprueba.root;
 import android.app.Application;
 
 import com.example.agprueba.database.DatabaseManager;
+import com.example.agprueba.http.HttpModule;
 import com.example.agprueba.list.ListModule;
 import com.example.agprueba.login.LoginModule;
 
@@ -18,6 +19,7 @@ public class App extends Application {
                 .applicationModule(new ApplicationModule(this))
                 .loginModule(new LoginModule())
                 .listModule(new ListModule())
+                .httpModule(new HttpModule())
                 .build();
 
         DatabaseManager inicializarBD = DatabaseManager.getInstanceDatabaseManager(this);
